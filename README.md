@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Luke Strong
 
 You can use the [editor on GitHub](https://github.com/LukeStro47/LukeStro47.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
