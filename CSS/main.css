@@ -37,7 +37,7 @@ aside {
     float: right;
 }
 #img {
-    padding-right: 43.75em;
+    /*padding-right: 43.75em;*/
 }
 #meta-description {
     color: white;
@@ -61,4 +61,8 @@ aside {
 }
 #meta-heading-title {
     color: white;
+}
+#container {
+    float: left;
+    padding: 4px 0px 0px 4px;
 }
