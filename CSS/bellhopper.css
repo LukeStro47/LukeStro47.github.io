@@ -1,0 +1,63 @@
+body {
+    background-color: #000000;
+}
+#mainh1 {
+    color: #ffffff;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-weight: 300;
+    font-stretch: normal;
+    font-size: 3.125em;
+    line-height: normal;
+    font-family: "NewLato";
+    text-decoration: none;
+}
+aside {
+    float: left;
+}
+#ProjectsH1 {
+    color: #ffffff; 
+    font-family: 'Lato'
+}
+@font-face {
+  font-family: 'NewLato';
+  src: url('../Fonts/Lato.woff2'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../Fonts/Lato.woff2') format('woff2'), /* Super Modern Browsers */
+}
+.projects {
+    color: #ffffff;
+    font-size: 0.75em;
+    text-decoration: none;
+    font-family: 'Roboto Condensed'
+}
+#container {
+    float: right;
+}
+#img {
+    width: 64.0em;
+    height: 31.25em;
+    padding: 3px 0px 0px 3px;
+}
+#bell-hopper-meta-description {
+    padding-left: 135px;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 0.8em;
+    text-align: center;
+}
+.projects:hover {
+    text-decoration: none;
+    color: aqua;
+}
+@media screen and (max-width: 1188px) {
+    #img {
+        width: 375px;
+        height: 183.11px;
+    }
+}
+#first-content {
+    text-align: center;
+}
