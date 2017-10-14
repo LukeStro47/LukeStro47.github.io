@@ -1,12 +1,12 @@
 // Initialize Firebase
 (function(){
     var config = {
-        apiKey: "AIzaSyBsnqMW3L_2pjboOOzZJ8fJDYzGgCxcyoo",
-        authDomain: "game-jumper-tester.firebaseapp.com",
-        databaseURL: "https://game-jumper-tester.firebaseio.com",
-        projectId: "game-jumper-tester",
-        storageBucket: "game-jumper-tester.appspot.com",
-        messagingSenderId: "457793690679"
+        apiKey: "AIzaSyCrfbcS3Ut5BoyCfNaX-WPUjmglB8cf1kE",
+        authDomain: "game-jumper.firebaseapp.com",
+        databaseURL: "https://game-jumper.firebaseio.com",
+        projectId: "game-jumper",
+        storageBucket: "game-jumper.appspot.com",
+        messagingSenderId: "1076316179864"
     };
     firebase.initializeApp(config);
     //Get Elements
@@ -29,7 +29,7 @@
     firebase.auth().onAuthStateChanged(firebaseUser => {
         if(firebaseUser) {
             console.log(firebaseUser);
-            document.getElementById('div').innerHTML = "SIGNED UP";
+            document.getElementById('Fun').innerHTML = "SIGNED UP";
         } else {
             console.log('Not Logged In');
         }
