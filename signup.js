@@ -13,23 +13,31 @@
     const txtEmail = document.getElementById('txtEmail');
     const txtPassword = document.getElementById('txtPassword');
     const btnSignUp = document.getElementById('btnSignUp');
+    const txtPasswordConfirm = document.getElementById('txtPasswordConfirm');
     //Add SignUp Event
     btnSignUp.addEventListener('click', e => {
-        //Get Email & Pass
-        //TODO: Check For Real Email
-        const email = txtEmail.value;
-        const pass = txtPassword.value;
-        const auth = firebase.auth();
-        //Sign In
-        const promise = auth.createUserWithEmailAndPassword(email, pass);
-        promise
-            .catch(e => console.log(e.message));
+        if(txtPassword.value == txtPasswordConfirm.value) {
+            //Get Email & Pass
+            //TODO: Check For Real Email
+            const email = txtEmail.value;
+            const pass = txtPassword.value;
+            const auth = firebase.auth();
+            //Sign In
+            const promise = auth.createUserWithEmailAndPassword(email, pass);
+            txtEmail.value = "";
+            txtPassword.value = "";
+            txtPasswordConfirm.value = "";
+            promise
+                .catch(e => alert(e.message));
+        } else {
+            alert("Passwords Don't Match");
+        }
     });
     //Add RealTime Listener
     firebase.auth().onAuthStateChanged(firebaseUser => {
         if(firebaseUser) {
             console.log(firebaseUser);
-            document.getElementById('div').innerHTML = "SIGNED UP";
+            document.getElementById('headering').innerHTML = "SIGNED UP";
         } else {
             console.log('Not Logged In');
         }
