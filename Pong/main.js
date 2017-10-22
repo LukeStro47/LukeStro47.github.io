@@ -1,4 +1,4 @@
-var game = new Phaser.Game(800, 600, Phaser.AUTO, 'world-of-pong', { preload: preload, create: create, update: update}, document.getElementById('game-main'));
+var game = new Phaser.Game(800, 600, Phaser.AUTO, 'world-of-pong', { preload: preload, create: create, update: update}, document.getElementById('main'));
 var paddle1;
 var paddle2;
 var ball;
