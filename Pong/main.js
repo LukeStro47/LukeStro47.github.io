@@ -183,6 +183,7 @@ function gameOver() {
             winner_text.visible = false;
             click_text.visible = false;
             menu();
+            //
         });
     } else if(winner_player2 == false) {
         score1 = 0;
