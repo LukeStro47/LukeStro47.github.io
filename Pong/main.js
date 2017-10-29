@@ -38,7 +38,7 @@ function preload() {
 }
 function create() {
     game_start_destroy = false;
-    ball_maxVelocity = 540;
+    ball_maxVelocity = 520;
     menu();
 }
 function update() {
