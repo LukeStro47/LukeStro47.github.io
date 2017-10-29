@@ -20,9 +20,10 @@ var hard;
 var new_ball;
 var new_paddle1;
 var new_paddle2;
+var ball_maxVelocity;
+var shoot_two = true;
 var game_started = false;
 var tries = 0;
-var ball_maxVelocity;
 var play_button;
 
 function preload() {
@@ -36,11 +37,14 @@ function preload() {
     game.load.image('play', 'assets/play.png');
 }
 function create() {
-    ball_maxVelocity = 500;
+    game_start_destroy = false;
+    ball_maxVelocity = 540;
     menu();
 }
 function update() {
     if(game_started == true) {
+        header.destroy();
+        play_button.destroy();
         score1_text.text = score1;
         score2_text.text = score2;
         control_paddle(paddle1, game.input.y);
@@ -48,10 +52,11 @@ function update() {
         game.physics.arcade.collide(paddle2, ball);
         if(ball.body.blocked.left) {
             score2 += 1;
+            shoot_two = true;
             launch_ball();
-            score2 = score2;
         } else if(ball.body.blocked.right) {
             score1 += 1;
+            shoot_two = false;
             launch_ball();
         }
         paddle2.body.velocity.setTo(ball.body.velocity.y);
@@ -74,7 +79,7 @@ function menu() {
     game.stage.backgroundColor = '#ffffff';
     header = game.add.sprite(game.world.centerX - 200, 0, 'logo');
     play_button = game.add.sprite(game.world.centerX - 100, game.world.centerY - 100, 'play', game.input.onDown.add(function() {
-        header.destroy();
+        header.visible = false;
         play_button.destroy();
         play_game();
     }));
@@ -105,7 +110,6 @@ function play_game() {
         game.stage.backgroundColor = '#000000';
         game.input.onDown.removeAll();
         score2 = 0;
-        // game.events.onInputDown.removeAll();
         paddle1.visible = true;
         paddle2.visible = true;
         ball_velocity = 700;
@@ -151,12 +155,20 @@ function launch_ball() {
         ball.body.velocity.setTo(0, 0);
         ball_launched = false;
     } else {
-        ball.body.velocity.x = -ball_velocity;
-        ball.body.velocity.y = ball_velocity;
-        ball_launched = true;
+        if(shoot_two == false) { 
+            ball.body.velocity.x = ball_velocity;
+            ball.body.velocity.y = -ball_velocity;
+            ball_launched = true;
+        } else if(shoot_two == true) {
+            paddle2.y = game.world.height - paddle2.width / 2;
+            ball.body.velocity.x = -ball_velocity;
+            ball.body.velocity.y = ball_velocity;
+            ball_launched = true;
+        }
     }
 }
 function gameOver() {
+    game_started = false;
     if(winner_player2 == true) {   
         score1 = 0;
         score2 = 0;
@@ -177,13 +189,11 @@ function gameOver() {
         game.input.onDown.add(function(){
             game.input.onDown.removeAll();
             score2 = 0;
-            create();
             tries += 1;
             gameover_text.visible = false;
             winner_text.visible = false;
             click_text.visible = false;
             menu();
-            //
         });
     } else if(winner_player2 == false) {
         score1 = 0;
@@ -205,7 +215,6 @@ function gameOver() {
         game.input.onDown.add(function(){
             game.input.onDown.removeAll();
             score2 = 0;
-            create();
             tries += 1;
             gameover_text.visible = false;
             winner_text.visible = false;
