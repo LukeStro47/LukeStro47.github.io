@@ -13,11 +13,11 @@ window.onload = function() {
     var winner_text;
 
 
-    var game = new Phaser.Game(canvasWidth, canvasHeight, Phaser.AUTO, 'game-main', { preload: preload, create: create, update: update });
+    var game = new Phaser.Game(canvasWidth, canvasHeight, Phaser.AUTO, '', { preload: preload, create: create, update: update });
 
     function preload() {
-        game.load.image('elephant', 'assets/snake(1).png', 40, 30);
-        game.load.image('apple', 'assets/diamond.png');
+        game.load.image('elephant', 'assets/snake(2).png', 40, 30);
+        game.load.image('apple', 'assets/apple.png');
         game.load.image('sky', 'assets/sky(1).png');
         game.load.bitmapFont('font', 'assets/font.png', 'assets/font.xml');
         
