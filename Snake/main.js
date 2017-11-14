@@ -13,7 +13,7 @@ window.onload = function() {
     var winner_text;
 
 
-    var game = new Phaser.Game(canvasWidth, canvasHeight, Phaser.AUTO, '', { preload: preload, create: create, update: update });
+    var game = new Phaser.Game(canvasWidth, canvasHeight, Phaser.AUTO, 'game-main', { preload: preload, create: create, update: update });
 
     function preload() {
         game.load.image('elephant', 'assets/snake(2).png', 40, 30);
