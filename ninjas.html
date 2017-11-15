@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Luke Strong Dev</title>
+        <link rel="shortcut icon" href="/Images/favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300|Open+Sans|Roboto+Condensed|Encode+Sans|Oswald" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Luke Strong Dev -- My Developer Site/Portfolio!">
+    </head>
+    <body>
+        <div id="top-holster">
+            <a href="index.html" style="text-decoration: none; color: white;" id="header">LUKE STRONG DEV</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#news">About</a></li>
+                <li class="drop">
+                    <a href="javascript:void(0)" class="dropbtn">Live Projects</a>
+                    <div class="drop-content">
+                        <a href="bellhopper.html">Bell Hopper</a>
+                        <a href="#">Ninjas vs. Pirates</a>
+                        <a href="#">Game Jumper Site</a>
+                    </div>
+                </li>
+                <li class="drop">
+                    <a href="javascript:void(0)" class="dropbtn">Coming Soon</a>
+                    <div class="drop-content">
+                        <a href="#">Game Jumper Mini Games</a>
+                        <a href="#">Game Jumper Games</a>
+                    </div>
+                </li>
+                <li class="drop">
+                    <a href="javascript:void(0)" class="dropbtn">Downloads</a>
+                    <div class="drop-content">
+                        <a href="#">Ninjas vs. Pirates</a>
+                    </div>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="blankDiv">
+        </div>
+        <h1>Ninjas</h1>
+        <img src="Images/title.png" id="img">
+        <p>Welcome to Bell Hopper! You play as the bell hop in a hotel filled with monsters. You have to tap a floor to make a bell hopper on that floor jump in this game, but make sure you don't jump onto a monster! Timing is key. Control either 3 or 5 bell hops. There is a leaderboard for both the 3 and 5 floored games. This game is compatible with Android phones and tablets. Download Bell Hopper today!</p>
+        <h3>Screenshot</h3>
+        <img src="http://is1.mzstatic.com/image/thumb/Purple118/v4/c2/0d/67/c20d67c0-a14b-1d08-df21-f16b6e15591e/source/520x293bb.jpg" class="screenshots">
+        <br>
+        <img src="http://is2.mzstatic.com/image/thumb/Purple128/v4/b4/3f/3c/b43f3c97-8c3a-cc2a-8b76-03877a1fde07/source/520x293bb.jpg" class="screenshots">
+        <br>
+        <!--
+
+
+            START HERE
+
+
+        !-->
+        <img src="http://is5.mzstatic.com/image/thumb/Purple118/v4/25/ed/24/25ed2444-e343-767a-ea93-c609483f8ddd/source/520x293bb.jpg" class="screenshots">
+        <h3>Links</h3>
+        <a href="https://play.google.com/store/apps/details?id=info.gamejumper.bellhopper"><img src="Images/Buttons/Play/128x128.png" id="new"></a>
+    </body>
+    <style>
+        * {
+            font-family: 'Roboto Condensed';
+        }
+        body {
+            background-color: black;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+        li {
+            float: left;
+        }
+
+        li a, .dropbtn {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, .drop:hover .dropbtn {
+            background-color:red;
+            text-decoration: none;
+            color: black;
+        }
+
+        li.drop {
+            display: inline-block;
+        }
+
+        .drop-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .drop-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .drop-content a:hover {
+            background-color: #f1f1f1
+        }
+
+        .drop:hover .drop-content {
+            display: block;
+        }
+        #header {
+            padding: 10px 0px 10px 40px;
+            text-decoration: none;
+            font-family: 'Lato';
+            font-size: 50px;
+            color: white;
+        }
+        #top-holster {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: black;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+        }
+        p {
+            color: white;
+            text-align: center;
+        }
+        #blankDiv {
+            padding-top: 110px;
+        }
+        #footer {
+            color: white;
+            font-family: 'Open Sans';
+        }
+        h3 {
+            color: white;
+            font-family: 'Open Sans';
+            text-align: center;
+        }
+        #img {
+            width: 70%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .screenshots {
+            width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        #new {
+            border: 1px solid white;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</html>
