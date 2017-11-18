@@ -7,12 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Luke Strong Dev -- My Developer Site/Portfolio!">
     </head>
-    <body>
+    <body onload="checkHeight()">
         <div id="top-holster">
             <a href="index.html" style="text-decoration: none; color: white;" id="header">LUKE STRONG DEV</a>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#news">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li class="drop">
                     <a href="javascript:void(0)" class="dropbtn">Live Projects</a>
                     <div class="drop-content">
@@ -24,22 +24,22 @@
                 <li class="drop">
                     <a href="javascript:void(0)" class="dropbtn">Coming Soon</a>
                     <div class="drop-content">
-                        <a href="#">Game Jumper Mini Games</a>
-                        <a href="#">Game Jumper Games</a>
+                        <a href="Game%20Jumper/minigames.html">Game Jumper Mini Games</a>
+                        <a href="Game%20Jumper/games.html">Game Jumper Games</a>
                     </div>
                 </li>
                 <li class="drop">
                     <a href="javascript:void(0)" class="dropbtn">Downloads</a>
                     <div class="drop-content">
-                        <a href="#">Ninjas vs. Pirates</a>
+                        <a href="downloadnin.html">Ninjas vs. Pirates</a>
                     </div>
                 </li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
         <div id="blankDiv">
         </div>
-        <h1>Ninjas vs Pirates</h1>
+        <h1>Bell Hopper</h1>
         <img src="Images/feature.png" id="img">
         <h3>Description</h3>
         <p>Welcome to Bell Hopper! You play as the bell hop in a hotel filled with monsters. You have to tap a floor to make a bell hopper on that floor jump in this game, but make sure you don't jump onto a monster! Timing is key. Control either 3 or 5 bell hops. There is a leaderboard for both the 3 and 5 floored games. This game is compatible with Android phones and tablets. Download Bell Hopper today!</p>
@@ -65,7 +65,6 @@
         li {
             float: left;
         }
-
         li a, .dropbtn {
             display: inline-block;
             color: black;
@@ -73,17 +72,14 @@
             padding: 14px 16px;
             text-decoration: none;
         }
-
         li a:hover, .drop:hover .dropbtn {
             background-color:red;
             text-decoration: none;
             color: black;
         }
-
         li.drop {
             display: inline-block;
         }
-
         .drop-content {
             display: none;
             position: absolute;
@@ -92,7 +88,6 @@
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
         }
-
         .drop-content a {
             color: black;
             padding: 12px 16px;
@@ -100,11 +95,9 @@
             display: block;
             text-align: left;
         }
-
         .drop-content a:hover {
             background-color: #f1f1f1
         }
-
         .drop:hover .drop-content {
             display: block;
         }
@@ -157,6 +150,11 @@
             border: 1px solid white;
             display: block;
             margin: 0 auto;
+        }
+        @media screen and (max-width: 568px) {
+            #blankDiv {
+                padding-top: 200px;
+            }
         }
     </style>
 </html>

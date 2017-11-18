@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <title>Luke Strong Dev</title>
         <link rel="shortcut icon" href="/Images/favicon.ico">
@@ -12,12 +12,12 @@
             <a href="index.html" style="text-decoration: none; color: white;" id="header">LUKE STRONG DEV</a>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="#">About</a></li>
                 <li class="drop">
                     <a href="javascript:void(0)" class="dropbtn">Live Projects</a>
                     <div class="drop-content">
                         <a href="bellhopper.html">Bell Hopper</a>
-                        <a href="#">Ninjas vs. Pirates</a>
+                        <a href="ninjas.html">Ninjas vs. Pirates</a>
                         <a href="Game%20Jumper/site.html">Game Jumper Site</a>
                     </div>
                 </li>
@@ -31,28 +31,24 @@
                 <li class="drop">
                     <a href="javascript:void(0)" class="dropbtn">Downloads</a>
                     <div class="drop-content">
-                        <a href="#">Ninjas vs. Pirates</a>
+                        <a href="downloadnin.html">Ninjas vs. Pirates</a>
                     </div>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
+        <h1 id="h1">About</h1>
         <div id="blankDiv">
         </div>
-        <h1>Ninjas vs. Pirates</h1>
-        <img src="Images/title.png" id="img">
-        <p>Welcome to Bell Hopper! You play as the bell hop in a hotel filled with monsters. You have to tap a floor to make a bell hopper on that floor jump in this game, but make sure you don't jump onto a monster! Timing is key. Control either 3 or 5 bell hops. There is a leaderboard for both the 3 and 5 floored games. This game is compatible with Android phones and tablets. Download Bell Hopper today!</p>
-        <h3>Screenshots</h3>
-        <img src="http://is1.mzstatic.com/image/thumb/Purple118/v4/c2/0d/67/c20d67c0-a14b-1d08-df21-f16b6e15591e/source/520x293bb.jpg" class="screenshots">
-        <br>
-        <img src="http://is2.mzstatic.com/image/thumb/Purple128/v4/b4/3f/3c/b43f3c97-8c3a-cc2a-8b76-03877a1fde07/source/520x293bb.jpg" class="screenshots">
-        <br>
-        <img src="http://is5.mzstatic.com/image/thumb/Purple118/v4/25/ed/24/25ed2444-e343-767a-ea93-c609483f8ddd/source/520x293bb.jpg" class="screenshots">
-        <h3>Links</h3>
-        <div id="linkDiv">
-            <a href="https://play.google.com/store/apps/details?id=info.gamejumper.ninjapirate"><img src="Images/Buttons/Play/128x128.png" id="new"></a>
-            <a href="https://itunes.apple.com/us/app/ninjas-vs-pirates/id1281366018?mt=8"><img src="Images/Buttons/App%20Store/128x128.png" id="new"></a>
-        </div>
+        <table>
+            <tr>
+                <div id="bellhopper">
+                    <a href="#"><img src="Images/Jurassic%20Park%20Log.JPG" id="feature"></a>
+                    <h1>Luke Strong</h1>
+                    <p>Hi, I'm Luke! Welcome to my site! I'm a web and mobile developer. You can check out all my projects on this site. I also make games for <a href="Game%2520Jumper/site.html" style="color: aliceblue; text-decoration: none;">Game Jumper</a>.</p>
+                </div>
+            </tr>
+        </table>
     </body>
     <style>
         * {
@@ -127,42 +123,50 @@
             top: 0;
             background-color: black;
         }
+        #feature { 
+            width: 50%;
+            height: auto;
+            float: left;
+        }
         h1 {
             color: white;
             text-align: center;
+            /*padding-top: 110px;*/
         }
         p {
             color: white;
             text-align: center;
         }
+        #ninfeature {
+            width: 50%;
+            height: auto;
+            float: left;
+        }
         #blankDiv {
-            padding-top: 110px;
+            padding-top: 5px;
         }
         #footer {
             color: white;
             font-family: 'Open Sans';
         }
-        h3 {
+        #hr{
+            display: block;
+            border: 0;
+            border-top: 1px solid #000;
+            margin: 1em 0;
+            padding: 0;
+            width: 100%;
+
+        }
+        #h1 {
             color: white;
             font-family: 'Open Sans';
             text-align: center;
+            padding-top: 110px;
         }
-        #img {
-            width: 70%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-        .screenshots {
-            width: 50%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-        #new {
-            border: 1px solid white;
-        }
-        #linkDiv {
+        .read-more {
+            text-decoration: none;
+            color: aqua;
             text-align: center;
         }
     </style>
