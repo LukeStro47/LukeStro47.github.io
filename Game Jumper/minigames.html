@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <title>Luke Strong Dev</title>
         <link rel="shortcut icon" href="/Images/favicon.ico">
@@ -9,16 +9,16 @@
     </head>
     <body>
         <div id="top-holster">
-            <a href="index.html" style="text-decoration: none; color: white;" id="header">LUKE STRONG DEV</a>
+            <a href="../index.html" style="text-decoration: none; color: white;" id="header">LUKE STRONG DEV</a>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="#news">About</a></li>
                 <li class="drop">
                     <a href="javascript:void(0)" class="dropbtn">Live Projects</a>
                     <div class="drop-content">
-                        <a href="bellhopper.html">Bell Hopper</a>
-                        <a href="ninjas.html">Ninjas vs. Pirates</a>
-                        <a href="Game%20Jumper/site.html">Game Jumper Site</a>
+                        <a href="../bellhopper.html">Bell Hopper</a>
+                        <a href="../ninjas.html">Ninjas vs. Pirates</a>
+                        <a href="../">Game Jumper Site</a>
                     </div>
                 </li>
                 <li class="drop">
@@ -39,14 +39,11 @@
         </div>
         <div id="blankDiv">
         </div>
-        <h1>Ninjas vs Pirates</h1>
-        <img src="Images/feature.png" id="img">
-        <h3>Description</h3>
-        <p>Welcome to Bell Hopper! You play as the bell hop in a hotel filled with monsters. You have to tap a floor to make a bell hopper on that floor jump in this game, but make sure you don't jump onto a monster! Timing is key. Control either 3 or 5 bell hops. There is a leaderboard for both the 3 and 5 floored games. This game is compatible with Android phones and tablets. Download Bell Hopper today!</p>
-        <h3>Screenshot</h3>
-        <img src="Images/phone-screenshot5.png" id="screenshots">
-        <h3>Links</h3>
-        <a href="https://play.google.com/store/apps/details?id=info.gamejumper.bellhopper"><img src="Images/Buttons/Play/128x128.png" id="new"></a>
+        <h1>Game Jumper Minigames</h1>
+        <img src="../Images/GJ-1.png" id="Game-Jumper">
+        <p>At Game Jumper, I make a bunch of mini games. You will be able to view them when the Game Jumper site goes live.</p>
+        <h3>Link</h3>
+        <button id="linkButton"><a href="https://gamejumper.info" id="a">View Site</a></button>
     </body>
     <style>
         * {
@@ -121,10 +118,6 @@
             top: 0;
             background-color: black;
         }
-        h1 {
-            color: white;
-            text-align: center;
-        }
         p {
             color: white;
             text-align: center;
@@ -136,27 +129,40 @@
             color: white;
             font-family: 'Open Sans';
         }
+        h1 {
+            color: white;
+            text-align: center;
+        }
         h3 {
             color: white;
             font-family: 'Open Sans';
             text-align: center;
         }
-        #img {
+        #Game-Jumper {
             width: 70%;
             height: auto;
             display: block;
             margin: 0 auto;
         }
-        #screenshots {
-            width: 30%;
+        #GJ {
+            width: 80%;
             height: auto;
             display: block;
             margin: 0 auto;
         }
-        #new {
-            border: 1px solid white;
+        #linkButton {
+            text-align: center;
             display: block;
             margin: 0 auto;
+            background-color: deepskyblue;
+            border-color: deepskyblue;
+            font-family: 'Encode Sans';
+            border-radius: 2px;
+            padding: 6px 4px 7px 4px;
+        }
+        #a {            
+            text-decoration: none;
+            color: black;
         }
     </style>
 </html>
