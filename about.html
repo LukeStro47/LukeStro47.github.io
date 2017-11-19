@@ -37,9 +37,8 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
+        <div id="blankDiv"></div>
         <h1 id="h1">About</h1>
-        <div id="blankDiv">
-        </div>
         <table>
             <tr>
                 <div id="bellhopper">
@@ -162,12 +161,24 @@
             color: white;
             font-family: 'Open Sans';
             text-align: center;
-            padding-top: 110px;
         }
         .read-more {
             text-decoration: none;
             color: aqua;
             text-align: center;
+        }
+        #blankDiv {
+            padding-top: 110px;
+        }
+        @media screen and (max-width: 568px) and (min-width: 312px)  {
+            #blankDiv {
+                padding-top: 200px;
+            }
+        }
+        @media screen and (max-width: 311px) and (min-width: 224px)  {
+            #blankDiv {
+                padding-top: 400px;
+            }
         }
     </style>
 </html>
